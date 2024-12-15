@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Gophers";
+  src: url("//2ttf.com/webfont/HCQ3PvcaQ4U/webfont.ttf") format("truetype");
+}
+
+/* Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* sample using the font */
+* {
+  font-family: "Gophers";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+}
+
+#question {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  font-size: 2rem;
+  padding: 15px;
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #5c9ded;
+  box-shadow: 0 4px 8px rgba(92, 157, 237, 0.4);
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
